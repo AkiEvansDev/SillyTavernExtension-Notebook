@@ -90,8 +90,8 @@ The Peacemaker (9): gentle, compassionate, easygoing, desire for harmony and bal
                     if (line) {
                         if (type.some(t => line.includes(`(${t}):`))) {
                             tags += line.substring(line.indexOf(':') + 1);
-                            n1 += line.substring(line.indexOf(':') - 2, 1);
-                            n2_2 += line.substring(0, line.indexOf(':') - 4);
+                            n1 += line.substring(line.indexOf(':') - 2, line.indexOf(':') - 1);
+                            n2_2 += line.substring(0, line.indexOf(':') - 3);
                         } else if (line.includes(`(${subType[0]}):`)) {
                             tags += line.substring(line.indexOf(':') + 1);
                             n2_1 += line.substring(0, line.indexOf(':') - 3);
@@ -106,10 +106,15 @@ The Peacemaker (9): gentle, compassionate, easygoing, desire for harmony and bal
                     tags = tags.trim();
                     tags = tags.substring(0, tags.length - 1);
 
-                    tags = `${n1} - ${n3}\n${n2_1}(${n2_2})\n[{{char}}'s Personality: ${tags};]`;
+                    n1 = n1.trim();
+                    n2_1 = n2_1.trim();
+                    n2_2 = n2_2.trim();
+                    n3 = n3.trim();
+
+                    tags = `${n1} - ${n3}\r\n${n2_1} (${n2_2})\r\n[{{char}}'s Personality: ${tags};]`;
 
                     if (content) {
-                        content += '\n' + tags;
+                        content += '\r\n' + tags;
                     } else
                         content = tags;
                 }
