@@ -23,11 +23,11 @@ Extrovert (E): extrovert, outgoing,
 Intuitive (N): intuitive, imaginative, creative, innovative,
 Sensing (S): sensing, practical, observant, detail-oriented,
 
-Thinking (T): thinking, rational, analytical, and decisive,
+Thinking (T): thinking, rational, analytical, decisive,
 Feeling (F): feeling, empathetic, compassionate, considerate,
 
 Perceiving (P): perceiving, flexible, spontaneous, open to new experiences,
-Judging (J): judging, decisive, goal-oriented, and responsible,
+Judging (J): judging, decisive, goal-oriented, responsible,
 
 The Reformer (1): strong sense of right and wrong, principled, idealistic, desire for personal growth, perfectionists,
 	1w9: more emotionally expressive and less rigid in principles,
@@ -45,7 +45,7 @@ The Individualist (4): creative, sensitive, introspective, deeply in touch with 
 	4w3: more assertive and less self-absorbed,
 	4w5: more creative and less introverted,
 
-The Investigator (5): curious, analytical, independent thinkers, may struggle with trusting others or opening up emotionally,
+The Investigator (5): curious, analytical, independent thinkers, may struggle with trusting others, emotionally closed,
 	5w4: more assertive and less detached,
 	5w6: more responsible and less self-absorbed,
 
@@ -57,7 +57,7 @@ The Enthusiast (7): adventurous, optimistic, spontaneous, desire for excitement 
 	7w8: more assertive and less self-absorbed,
 	7w9: more emotionally expressive and less detached,
 
-The Challenger (8): strong, assertive, confident, desire for control and power, may struggle with trusting others or opening up emotionally,
+The Challenger (8): strong, assertive, confident, desire for control and power, may struggle with trusting others, emotionally closed,
 	8w7: more adaptable and less aggressive,
 	8w9: more emotionally expressive and less aggressive,
 
