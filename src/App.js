@@ -85,7 +85,7 @@ function App({ onCloseClicked }) {
     }
 
     function addPage() {
-        const newPage = { title: 'Untitled', content: '' };
+        const newPage = { title: 'Untitled', content: '', generateValue: '' };
         const newPages = [...pages, newPage];
         setPages(newPages);
         StateManager.setPages(newPages);
