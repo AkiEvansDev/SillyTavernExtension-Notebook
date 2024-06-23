@@ -10,6 +10,7 @@ import Page from './Page';
  * @typedef {object} Page
  * @property {string} title - The title of the page
  * @property {string} content - The content of the page
+ * @property {string} generateValue - The value for generate personal type info
  */
 
 /**
