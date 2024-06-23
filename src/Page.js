@@ -1,5 +1,5 @@
 /* eslint-disable no-restricted-globals */
-import React from 'react';
+import React, { useState } from 'react';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 
@@ -11,6 +11,8 @@ import 'react-quill/dist/quill.snow.css';
  * @returns
  */
 export default function Page({ page, onChange }) {
+
+    const [value, setValue] = useState("");
 
     function getText(text) {
         return text;
@@ -24,8 +26,8 @@ export default function Page({ page, onChange }) {
             </div>
             <ReactQuill placeholder="What's on your mind?" theme="snow" value={page.content} onChange={(content) => onChange({ ...page, content })} scrollingContainer={document.getElementById('notebookPanelHolder')} />
             <div className="flex-container alignItemsCenter">
-                <input placeholder="Input in format [XXXX - XwX]" value={this.state.inputValue} className="text_pole flex1" type="text" />
-                <i className="right_menu_button fa-solid fa-magic-wand-sparkles" onClick={() => onChange({ ...page, content: getText(this.state.inputValue) })}></i>
+                <input placeholder="Input in format [XXXX - XwX]" className="text_pole flex1" type="text" value={value} onChange={(event) => setValue(event.target.value)} />
+                <i className="right_menu_button fa-solid fa-magic-wand-sparkles" onClick={() => onChange({ ...page, content: getText(value) })}></i>
             </div>
         </div>
     );
