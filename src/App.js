@@ -10,7 +10,6 @@ import Page from './Page';
  * @typedef {object} Page
  * @property {string} title - The title of the page
  * @property {string} content - The content of the page
- * @property {string} generateValue - The value for generate personal type info
  */
 
 /**
@@ -85,7 +84,7 @@ function App({ onCloseClicked }) {
     }
 
     function addPage() {
-        const newPage = { title: 'Untitled', content: '', generateValue: '' };
+        const newPage = { title: 'Untitled', content: '' };
         const newPages = [...pages, newPage];
         setPages(newPages);
         StateManager.setPages(newPages);

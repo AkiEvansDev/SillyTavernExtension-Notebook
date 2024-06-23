@@ -24,8 +24,8 @@ export default function Page({ page, onChange }) {
             </div>
             <ReactQuill placeholder="What's on your mind?" theme="snow" value={page.content} onChange={(content) => onChange({ ...page, content })} scrollingContainer={document.getElementById('notebookPanelHolder')} />
             <div className="flex-container alignItemsCenter">
-                <input placeholder="Input in format [XXXX - XwX]" value={page.generateValue} className="text_pole flex1" type="text" />
-                <i className="right_menu_button fa-solid fa-magic-wand-sparkles" onClick={() => onChange({ ...page, content: getText(page.generateValue) })}></i>
+                <input placeholder="Input in format [XXXX - XwX]" value={this.state.inputValue} className="text_pole flex1" type="text" />
+                <i className="right_menu_button fa-solid fa-magic-wand-sparkles" onClick={() => onChange({ ...page, content: getText(this.state.inputValue) })}></i>
             </div>
         </div>
     );
