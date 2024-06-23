@@ -12,8 +12,8 @@ import 'react-quill/dist/quill.snow.css';
  */
 export default function Page({ page, onChange }) {
 
-    function getText() {
-        return "Test";
+    function getText(text) {
+        return text;
     }
 
     return (
@@ -24,8 +24,8 @@ export default function Page({ page, onChange }) {
             </div>
             <ReactQuill placeholder="What's on your mind?" theme="snow" value={page.content} onChange={(content) => onChange({ ...page, content })} scrollingContainer={document.getElementById('notebookPanelHolder')} />
             <div className="flex-container alignItemsCenter">
-                <input placeholder="Input in format [XXXX - XwX]" className="text_pole flex1" type="text" />
-                <i className="right_menu_button fa-solid fa-trash" onClick={() => confirm('Are you sure?') && onChange({ ...page, content: getText() })}></i>
+                <input placeholder="Input in format [XXXX - XwX]" value={page.test} className="text_pole flex1" type="text" />
+                <i className="right_menu_button fa-solid fa-magic-wand-sparkles" onClick={() => onChange({ ...page, content: getText(page.test) })}></i>
             </div>
         </div>
     );
