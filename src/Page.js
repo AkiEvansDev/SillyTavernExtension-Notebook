@@ -111,10 +111,10 @@ The Peacemaker (9): gentle, compassionate, easygoing, desire for harmony and bal
                     n2_2 = n2_2.trim();
                     n3 = n3.trim();
 
-                    tags = `${n1} - ${n3}\r\n${n2_1} (${n2_2})\r\n[{{char}}'s Personality: ${tags};]`;
+                    tags = `${n1} - ${n3}</br>${n2_1} (${n2_2})</br>[{{char}}'s Personality: ${tags};]`;
 
                     if (content) {
-                        content += '\r\n' + tags;
+                        content += '</br>' + tags;
                     } else
                         content = tags;
                 }
