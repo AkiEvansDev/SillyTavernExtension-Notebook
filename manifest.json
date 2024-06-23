@@ -1,12 +1,12 @@
 {
-    "display_name": "Notebook",
+    "display_name": "Notebook+",
     "loading_order": 100,
     "requires": [],
     "optional": [],
     "js": "dist/index.js",
     "css": "",
-    "author": "Cohee1207",
-    "version": "1.0.0",
-    "homePage": "https://github.com/SillyTavern/Extension-Notebook",
-    "auto_update": true
+    "author": "Ali",
+    "version": "1.0.1",
+    "homePage": "https://github.com/AkiEvansDev/SillyTavernExtension-Notebook",
+    "auto_update": false
 }
