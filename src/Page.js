@@ -79,13 +79,25 @@ The Peacemaker (9): gentle, compassionate, easygoing, desire for harmony and bal
                 var subType = value.substring(4);
 
                 var tags = "";
+                var n1 = "";
+                var n2_1 = "";
+                var n2_2 = "";
+                var n3 = "";
 
                 lines.forEach((line) => {
                     line = line.trim();
 
                     if (line) {
-                        if (type.some(t => line.includes(`(${t}):`)) || line.includes(`(${subType[0]}):`) || line.includes(`${subType}:`)) {
-                            tags += line.substring(line.indexOf(":") + 1);
+                        if (type.some(t => line.includes(`(${t}):`))) {
+                            tags += line.substring(line.indexOf(':') + 1);
+                            n1 += line.substring(line.indexOf(':') - 2, 1);
+                            n2_2 += line.substring(0, line.indexOf(':') - 4);
+                        } else if (line.includes(`(${subType[0]}):`)) {
+                            tags += line.substring(line.indexOf(':') + 1);
+                            n2_1 += line.substring(0, line.indexOf(':') - 3);
+                        } else if (line.includes(`${subType}:`)) {
+                            tags += line.substring(line.indexOf(':') + 1);
+                            n3 += subType;
                         }
                     }
                 });
@@ -93,7 +105,8 @@ The Peacemaker (9): gentle, compassionate, easygoing, desire for harmony and bal
                 if (tags) {
                     tags = tags.trim();
                     tags = tags.substring(0, tags.length - 1);
-                    tags = `[{{char}}'s Personality: ${tags};]`;
+
+                    tags = `${n1} - ${n3}\n${n2_1}(${n2_2})\n[{{char}}'s Personality: ${tags};]`;
 
                     if (content) {
                         content += '\n' + tags;
