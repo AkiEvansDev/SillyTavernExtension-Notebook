@@ -99,7 +99,7 @@ function App({ onCloseClicked }) {
             <div className="panelControlBar flex-container alignItemsBaseline">
                 <div id="notebookPanelheader" class="fa-fw fa-solid fa-grip drag-grabber"></div>
                 <div id="notebookPanelMaximize" class="inline-drawer-maximize">
-                    <i class="floating_panel_maximize fa-fw fa-solid fa-window-maximize"></i>
+                    <i class="floating_panel_maximize fa-fw fa-solid fa-window-restore"></i>
                 </div>
                 <div id="notebookPanelClose" class="fa-fw fa-solid fa-circle-xmark floating_panel_close" onClick={() => onCloseClicked()}></div>
             </div>

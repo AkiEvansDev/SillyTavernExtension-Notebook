@@ -92,7 +92,7 @@ The Peacemaker (9): gentle, compassionate, easygoing, desire for harmony and bal
 
                 if (tags) {
                     tags = tags.trim();
-                    tags = tags.substring(tags.length - 1);
+                    tags = tags.substring(0, tags.length - 1);
                     tags = `[{{char}}'s Personality: ${tags};]`;
 
                     if (content) {

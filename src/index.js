@@ -22,7 +22,7 @@ const rootElement = document.getElementById('movingDivs');
 const rootContainer = document.createElement('div');
 rootElement.appendChild(rootContainer);
 rootContainer.id = 'notebookPanel';
-rootContainer.classList.add('drawer-content', 'flexGap5', 'displayNone');
+rootContainer.classList.add('drawer-content', 'flexGap5', 'displayNone', 'maximized');
 
 buttonElement.addEventListener('click', () => {
     rootContainer.classList.toggle('flex');
